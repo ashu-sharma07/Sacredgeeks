@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body, #cover-text-hero h2, #cover-text-hero h3,#cover-text-hero-c h2 {
+    font-family: roboto,sans-serif;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+header{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+h1,h2{
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+}
+hr{
+    width: 90%;
+    margin: 25px 5%;
+    border-top:1px solid #3a3a3a;
+}
+#logo{
+    float: left;
+    margin-left: 2%;
+    font-size: 250%;
+}
+#menu{
+    float: right;
+    margin-right: 2%;
+    font-size: 130%;
+}
+#logo, #menu{
+    line-height: 75px;
+    color: #3a3a3a;
+}
+#menu li{
+    float: left;
+    list-style: none;
+    padding-right: 15px;
+}
+#menu a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+#menu a:hover{
+    border-bottom: 1.5px solid #3a3a3a;
+    font-weight: 800;
+     transition: 0.2s; 
+}
+.active{
+    border-bottom: 1.5px solid #3a3a3a;
+    font-size: 100% !important;
+}
+#hero-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+}
+#hero-outer > div{
+    height: 600px;
+    width: 100%;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+#hero-home{
+    background: url(../images/hero-home.jpg)no-repeat center center;
+}
+#hero-mind{
+    background: url(../images/mind-hero.png)no-repeat center center;
+}
+#hero-yoga{
+    background: url(../images/yoga-hero.png)no-repeat center center;
+}
+#hero-med{
+    background: url(../images/med-hero.jpg)no-repeat center center;
+}
+#hero-contact{
+    background: url(../images/hero-contact.png)no-repeat center center;
+}
+#hero-courses{
+    background: url(../images/hero-courses.jpg)no-repeat center center;
+}
+#hero-404{
+    background: url(../images/404-hero.jpg)no-repeat center center;
+}
+#cover-text-hero{
+    width: 250px;
+    height: 160px;
+    background-color: rgba(241, 225, 150, 0.6);
+    color: inherit;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    bottom: 100px;
+    right: 40px;
+    position: absolute;
+}
+
+#cover-text-hero-c{
+    width: 350px;
+    height: 80px;
+    background-color: rgba(241, 225, 150, 0.6);
+    color: inherit;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    bottom: 100px;
+    right: 40px;
+    position: absolute;
+}
+#cover-text-hero h2{
+    padding-bottom: 20px;
+}
+#cover-text-hero h3{
+    line-height: 25px;
+}
+#summary h2, #setup h2, #setup-c h2, #benefits h2, #basics h2{
+    padding: 20px 0;
+    text-align: center;
+}
+#summary p, #setup p, #benefits p, #basics p{
+    line-height: 30px;
+}
+#summary p,#setup, #benefits{
+    margin: 0 5%;
+}
+#setup ul{
+    list-style: none;
+    line-height: 75px;
+    vertical-align: top;
+}
+#setup-c ul{
+    list-style: none;
+    line-height: 50px;
+    vertical-align:auto;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+.don-button{
+    background-color:olivedrab;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    position: absolute;
+    left: 46%;
+    cursor: pointer;
+}
+.medium-img-container{
+    height: 300px;
+    width: 40%;
+    display: inline-block;
+}
+#med-setup{
+    background: url(../images/med-setup.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#med-setup1{
+    background: url(../images/med-setup1.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#med-setup2{
+    background: url(../images/med-setup2.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#med-setup3{
+    background: url(../images/med-setup3.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#med-setup4{
+    background: url(../images/med-setup4.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#mind-setup{
+    background: url(../images/mind-setup.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%; 
+}
+#yoga-setup{
+    background: url(../images/yoga-setup.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#setup-list{
+    width: 40%;
+    display: inline-block;
+    font-size: 120%;
+    text-align: left;
+    margin-left: 5%;
+}
+#setup-list-c{
+    width: 40%;
+    display: inline-block;
+    font-size: 120%;
+    text-align: left;
+    margin-left:5%;
+}
+#setup-icons{
+    width: 10%;
+    display: inline-block;
+    font-size: 200%;
+    text-align: center;
+}
+#benefits ul{
+    list-style: none;
+}
+.small-img-container{
+    height: 300px;
+    width: 33%;
+    display: inline-block;
+}
+.benefits-overlay-text{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(114, 117, 111, 0.6);
+    color: #ffff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 80px;
+    font-size: 120%;
+}
+#benefits-med-1{
+    background: url(../images/med-benefit-1.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-med-2{
+    background: url(../images/med-benefit-2.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-med-3{
+    background: url(../images/med-benefit-3.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+#benefits-mind-1{
+    background: url(../images/mind-benefit-1.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-mind-2{
+    background: url(../images/mind-benefit-2.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-mind-3{
+    background: url(../images/mind-benefit-3.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+#benefits-yoga-1{
+    background: url(../images/yoga-benefit-1.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-yoga-2{
+    background: url(../images/yoga-benefit-2.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+   background-size: cover;
+}
+#benefits-yoga-3{
+    background: url(../images/yoga-benefit-3.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.benefits-list i{
+    font-size: 200%;
+}
+ #benefits-further-info div{
+     width: 33%;
+     display: inline-block;
+     vertical-align: top;
+ }
+#benefits-further-info h3,#benefits-further-info p {
+    line-height: 30px;
+    padding:10px 5px 0 5px;
+    text-align: center;
+}
+#benefits-further-info h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#basics{
+    text-align: center;
+}
+#basics p{
+    padding-bottom: 20px;
+}
+#sign-up{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%; 
+}
+.sign-up-textbox{
+    margin-left: 15%;
+    width: 30%;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    line-height: 30px;
+    background-color: rgba(214, 220, 207, 0.6);
+}
+.sign-up-form{
+    background-color: rgba(214, 220, 207, 0.6);
+    border-radius: 20px;
+    margin-left: 5%;
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    line-height: 0;
+}
+.sign-up-form input{
+    width: 60%;
+    margin-left: 20%;
+    padding: 5px 0 5px 2px;
+    display: block;
+}
+.sign-up-form label{
+    margin-left: 20%;
+    line-height: 40px;
+    display: block;  
+}
+.sign-up-form [type=submit], #contact-form [type=submit]{
+    width: 20%;
+    margin-left: 35%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #ffff;
+}
+.sign-up-form [placeholder], #contact-form [placeholder]{
+    color: #3a3a3a;
+}
+.sign-up-form input:hover, #contact-form input:hover{
+     background-color: lightblue;
+}
+.sign-up-form [type=submit]:hover, #contact-form [type=submit]:hover{
+    background-color: lightblue;
+    font-weight: 600;
+}
+#lower-img-blocks{
+    background: url(../images/lower-section.jpg)no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+#lower-img-blocks div{
+   color: #fafafa;
+    background-color: rgba(114, 117, 111, 0.6);
+    width: 25%;
+    height: 200px;
+    float:left;
+    padding:30px 0 0 30px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+    font-size: 200%;
+    line-height: 80px;
+}
+#contact-form{
+    background-color: rgba(214, 220, 207, 0.6);
+    border-radius: 20px;
+    margin:30px 25%;
+    width: 50%;
+    height: 770px;
+    display: inline-block;
+    line-height: 50px;
+}
+#contact-form h2{
+    text-align: center;
+    font-size: 160%;
+}
+#contact-form input, #query-subject{
+    width: 60%;
+    margin-left: 20%;
+    padding: 15px 0 15px 10px;
+    font-size: 110%;
+}
+#contact-form label{
+    margin-left: 20%;
+    line-height: 40px;
+    font-size: 110%;
+}
+#query{
+    width: 60%;
+    margin-left: 20%;
+    padding: 15px 0 15px 10px;
+    font-size: 110%;
+    height: 150px;
+    line-height: 20px;
+}
+#hero-404 div{
+    height: 100px;
+    margin: 150px 20%;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(214, 220, 207, 0.6);
+}
+footer a{
+    color: #3a3a3a;
+}
+#social{
+    text-align: center;
+}
+#social li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 200%;
+    color: #ffff;
+}
+#contact{
+    text-align: center;
+    line-height: 50px;
+    font-size: 120%;
+}
+#contact li, #contact a{
+    text-decoration: none;
+    list-style: none;
+}
+#top-btn{
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: #3a3a3a;
+    color: #ffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#top-btn a{
+    text-decoration: none;
+    color: #ffff;
+}
+@media screen and (max-width:5000px){
+    header, #hero-outer, #summary, #setup,#setup-c, #benefits, #basics, #sign-up, #lower-img-blocks, footer{
+        width: 60%;
+        margin: 0 20%;
+    }
+    hr{
+        width: 60%;
+        margin: 25px 20%;
+    }
+    p,li{
+        font-size: 120%;
+        font-weight: 600;
+    }
+    #sign-up{
+    margin-top: 50px;
+    }
+}
+@media screen and (max-width:2000px){
+    header, #hero-outer, #summary, #setup,#setup-c, #benefits, #basics, #lower-img-blocks, footer{
+        width: 85%;
+        margin: 0 8%;
+    }
+    #sign-up{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 90%;
+    }
+}
+@media screen and (max-width:1200px){
+      header, #hero-outer, #summary, #benefits, #basics, #lower-img-blocks, footer{
+        width: 100%;
+        margin: 0;
+    }
+    #setup{
+        width: 95%;
+        margin-left: 5%;
+    }
+    #setup-c{
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    p,li{
+        font-size: 100%;
+        font-weight: 500;
+    }
+    hr{
+        width: 90%;
+        margin: 25px 5%;
+    }
+ .small-img-container, #benefits-further-info div{
+        clear: both;
+        width: 60%;
+        margin:0 0 10px 20%;
+    }
+ #video-link{
+     width: 90%;  
+ }
+}
+@media screen and (max-width:950px){
+     #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        font-size: 90%;
+    }
+    #hero-outer{
+        padding-top: 150px;
+    }
+     #cover-text-hero{
+        left: 0;
+        margin-left: 5%;
+    }
+    .medium-img-container{
+        width: 90%;
+        margin-left: 5%;
+        clear: both;
+    }
+    #setup{
+        margin: 0;
+    }
+    #setup-c{
+        margin: 0;
+    }
+    #setup-list{
+        width: 65%;
+        float: left;
+        margin-left: 5%;
+    }
+     #setup-icons{
+        width: 25%;
+        float: right;
+        margin-right: 5%;
+    }
+    #sign-up{
+        height: 410px;
+    }
+    .sign-up-textbox, .sign-up-form, #contact-form{
+        width: 60%;
+        margin:10px 20%;
+        display: block;
+    }
+   #lower-img-blocks h3{
+       font-size: 80%;
+   }
+}
+@media screen and (max-width:800px){
+    #menu{
+        font-size: 90%;
+    }
+    #setup-list{
+        width: 65%;
+        float: left;
+        margin-left: 5%;
+        font-size: 90%;
+    }
+    #setup-list li{
+        font-weight: 600;
+    }
+     #setup-icons{
+        width: 25%;
+        float: right;
+        margin-right: 5%;
+    }
+    .small-img-container{
+        width: 70%;
+        margin: 5px 15%;
+    }
+    #sign-up, #contact-form{
+        font-size: 80%;
+    }
+    .sign-up-textbox, .sign-up-form, #contact-form{
+        width: 70%;
+        margin:10px 15%;
+        display: block;
+    }
+    .sign-up-form [type=submit]{
+        width: 30%;
+    }
+    #lower-img-blocks > div{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    #contact, #social{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width:600px){
+    #logo{
+        width: 90%;
+        margin: 0 5%;
+        font-size: 250%;
+        text-align: center;
+    }
+    header{
+        position: relative;
+    }
+    #menu li{
+        width: 80%;
+        margin: 10px 10%;
+        font-size: 250%;
+        line-height: 30px;
+        text-align: center;
+    }
+    #hero-outer{
+        padding-top: 0;
+    }
+    #top-btn{
+        visibility: visible;
+    }
+    #setup-list{
+        width: 75%;
+        float: left;
+        margin-left: 5%;
+        font-size: 80%;
+    }
+    
+     #setup-icons{
+        width: 15%;
+        float: right;
+        margin-right: 5%;
+    }
+     .small-img-container{
+        height: 200px;
+        width: 90%;
+        margin: 5px 5%;
+    }
+    .benefits-list li{
+        padding-top: 10px;
+        line-height: 40px;
+    }
+    #benefits-further-info div{
+        clear: both;
+        width: 90%;
+        margin:0 0 10px 5%;
+    }
+    #video-link{
+        height: 200px;
+    }
+    #contact-form,.sign-up-textbox, .sign-up-form{
+        width: 90%;
+        margin: 10px 5%;
+    }
+}
